@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import kiiteats from "../assets/images/KiitEats.png";
 import realestate from "../assets/images/realEstate.png";
-import ecommerce from "../assets/images/e-commerce.png";
+import portfolio from "../assets/images/portfolio.png";
 import recipeApp from "../assets/images/Recipe App.png";
 
 type Project = {
@@ -38,7 +38,7 @@ const projects: Project[] = [
   {
     id: uuidv4(), // Generate unique ID using uuid
     title: "Responsive Portfolio",
-    image: ecommerce,
+    image: portfolio,
     description:
       "My portfolio website, crafted with Tailwind CSS, React.js, and TypeScript, showcases my work and expertise with a sleek, modern design. It offers seamless navigation, responsiveness across devices, and a dark to light mode toggle. It reflects my commitment to professionalism and innovation in web development.",
     techStack: ["React", "TypeScript", "TailwindCss"],
@@ -50,7 +50,7 @@ const projects: Project[] = [
     title: "Recipe App Landing Page",
     image: recipeApp,
     description:
-     "The Recipe App Landing Page is a ReactJS project developed while learning Tailwind CSS. It showcases UI skills and color schemes, designed to engage visitors. With a captivating interface and responsiveness, it demonstrates proficiency in front-end development, leveraging modern web technologies.",
+      "The Recipe App Landing Page is a ReactJS project developed while learning Tailwind CSS. It showcases UI skills and color schemes, designed to engage visitors. With a captivating interface and responsiveness, it demonstrates proficiency in front-end development, leveraging modern web technologies.",
     techStack: ["ReactJs, Tailwind Css"],
     github: "https://github.com/Iyabivuz-e/Tailwind-Recipe-Simple-App",
     deploy: "https://dioeats.netlify.app/",
