@@ -1,11 +1,10 @@
-// import React from 'react'
 
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 
 const About = () => {
   return (
-    <div className="flex flex-col mt-16 ">
+    <div className="flex flex-col mt-16 " id="about-me">
       <h1 className="text-center text-4xl font-bold text-green-600">
         About Me
       </h1>

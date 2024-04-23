@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import projects from "../../helpers/Portfolio";
 
 const Works = () => {
   return (
-    <div className="flex flex-col mt-16">
+    <div className="flex flex-col mt-16" id="works">
       <h1 className="text-center text-4xl font-bold text-green-600">
         My Works
       </h1>
@@ -25,12 +26,12 @@ const Works = () => {
               <li className="mr-3">Tech Stack: {proj.techStack.join(", ")}</li>
             </ul>
             <div className="p-4 flex justify-between gap-3">
-              <button className="px-6 py-1 border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all">
+              <Link to={proj.deploy} className="px-6 py-1 border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all">
                 View
-              </button>
-              <button className="px-6 py-1 border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all">
+              </Link>
+              <Link  to={proj.github} className="px-6 py-1 border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all">
                 Github
-              </button>
+              </Link>
             </div>
           </section>
         ))}

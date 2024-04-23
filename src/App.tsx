@@ -14,8 +14,8 @@ const App = () => {
   return (
     <div className={`${darkMode && "dark"}`}>
       <div className="px-6 sm:px-12 py-3 dark:bg-neutral-950 max-sm:px-4">
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <BrowserRouter>
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
           <Intro />
           <About />
           <Works />
