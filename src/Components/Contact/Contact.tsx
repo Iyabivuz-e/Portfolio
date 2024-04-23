@@ -10,7 +10,7 @@ const Contact = () => {
       <h1 className="text-center text-4xl font-bold text-green-600">
         Get In Touch With Me
       </h1>
-      <section className="flex align-center justify-center mt-5 gap-5">
+      <section className="flex flex-wrap align-center justify-center mt-5 gap-5">
         <Link
           to="https://www.linkedin.com/in/iyabivuze/"
           className="flex align-center bg-green-600 text-white px-4 py-2 gap-1"
@@ -20,7 +20,7 @@ const Contact = () => {
         </Link>
         <Link
           to=""
-          className="flex align-center bg-black text-white px-4 py-2 gap-1"
+          className="flex align-center bg-black text-white px-4 py-2 gap-1 dark:bg-slate-200 dark:text-neutral-950"
         >
           <CallIcon />
           Call

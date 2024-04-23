@@ -8,7 +8,10 @@ const Works = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12  ">
         {projects.map((proj) => (
-          <section key={proj.id} className="bg-slate-200">
+          <section
+            key={proj.id}
+            className="bg-slate-200 dark:text-slate-200 dark:bg-neutral-900"
+          >
             <div>
               <img
                 src={proj.image}

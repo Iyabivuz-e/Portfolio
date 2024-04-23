@@ -3,10 +3,10 @@ import programmingLanguages from "../../helpers/Techskills";
 const Skills = () => {
   return (
     <div>
-      <h1 className="text-xl mb-5 font-bold">My Skills</h1>
+      <h1 className="text-xl mb-5 font-bold dark:text-slate-200">My Skills</h1>
       <div>
         <ul
-          className=" px-4 py-3 flex gap-3 mb-5"
+          className=" py-3 flex gap-3 mb-5 max-sm:flex-wrap justify-start"
         >
           <li className="bg-green-600 text-white px-4 py-2 cursor-pointer font-semibold">All</li>
           <li className="bg-green-600 text-white px-4 py-2 cursor-pointer font-semibold">Frontend</li>
