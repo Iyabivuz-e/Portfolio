@@ -43,7 +43,7 @@ const projects: Project[] = [
       "A detailed description of your first project, highlighting its functionalities and achievements.",
     techStack: ["HTML, Css, JavaScript"],
     github: "https://github.com/Iyabivuz-e/Portfolio",
-    deploy: "",
+    deploy: "https://dio-portfolio.vercel.app/",
   },
   {
     id: uuidv4(),

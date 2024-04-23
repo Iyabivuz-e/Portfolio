@@ -26,10 +26,18 @@ const Works = () => {
               <li className="mr-3">Tech Stack: {proj.techStack.join(", ")}</li>
             </ul>
             <div className="p-4 flex justify-between gap-3">
-              <Link to={proj.deploy} className="px-6 py-1 border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all">
+              <Link
+                to={proj.deploy}
+                target="blank"
+                className="px-6 py-1 border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all"
+              >
                 View
               </Link>
-              <Link  to={proj.github} className="px-6 py-1 border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all">
+              <Link
+                to={proj.github}
+                target="blank"
+                className="px-6 py-1 border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all"
+              >
                 Github
               </Link>
             </div>
