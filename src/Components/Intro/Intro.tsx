@@ -12,7 +12,7 @@ const Intro = () => {
         <h1 className="text-5xl font-bold leading-10 text-green-600">
           Dieudonne Iyabivuze
         </h1>
-        <p className="mt-3 text-lg font-semibold dark:text-slate-200">
+        <p className="mt-3 mb-3 text-lg font-semibold dark:text-slate-200">
           I am a Full stack developer
         </p>
         <Link

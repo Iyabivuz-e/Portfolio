@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
-import kiiteats from "../assets/images/KiitEats.png"
-import realestate from "../assets/images/realEstate.png"
-import ecommerce from "../assets/images/e-commerce.png"
-import recipeApp from "../assets/images/Recipe App.png"
+import kiiteats from "../assets/images/KiitEats.png";
+import realestate from "../assets/images/realEstate.png";
+import ecommerce from "../assets/images/e-commerce.png";
+import recipeApp from "../assets/images/Recipe App.png";
 
 type Project = {
   id: string;
@@ -30,7 +30,7 @@ const projects: Project[] = [
     title: "Real Estate - Jephte Houses Ltd.",
     image: realestate,
     description:
-      "<Real Estate - Jephte Houses Ltd>. is a web application developed using ReactJS and styled with SASS. It serves as an online platform for Jephte Houses Ltd., a fictional real estate company, to showcase their properties and services to potential clients. The website features a modern and user-friendly interface designed to attract and engage visitors. Users can explore available properties, view detailed descriptions and images, and contact the company for inquiries. The project demonstrates my skills in frontend development, including ReactJS for dynamic UI components and SASS for efficient styling and theming.",
+"Real Estate - Jephte Houses Ltd. is a ReactJS web app styled with SASS, designed as an online platform for the fictional real estate company. It showcases properties and services, boasting a modern, user-friendly interface for engaging visitors. Users can browse properties, view detailed descriptions and images, and contact the company. This project highlights my frontend skills, leveraging ReactJS for dynamic UI components and SASS for efficient styling and theming.",
     techStack: ["ReactJS, SASS"],
     github: "https://github.com/Iyabivuz-e/Real-Estate",
     deploy: "https://jephte-house-ltd.netlify.app/",
