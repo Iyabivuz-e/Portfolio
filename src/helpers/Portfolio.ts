@@ -20,17 +20,17 @@ const projects: Project[] = [
     title: "Food Devlivery Web App",
     image: kiiteats,
     description:
-      "A detailed description of your first project, highlighting its functionalities and achievements.",
+      "The Food Ordering App is a user-friendly web application that simplifies the process of ordering food online. With seamless integration with Stripe for secure payments, customers can easily browse through a variety of food options, add items to their cart, and complete transactions with confidence. Administrators can efficiently manage orders and track sales through the intuitive admin panel. Built using React.js and Node.js, this app offers a streamlined solution for online food businesses.",
     techStack: ["ReactJS", "TailwindCss", "NodeJS", "MongoDB"],
     github: "https://github.com/Iyabivuz-e/KiitEats",
     deploy: "https://kiiteats.vercel.app/",
   },
   {
     id: uuidv4(),
-    title: "Fantastic Project Two",
+    title: "Real Estate - Jephte Houses Ltd.",
     image: realestate,
     description:
-      "Another project description showcasing its key features and impact.",
+      "<Real Estate - Jephte Houses Ltd>. is a web application developed using ReactJS and styled with SASS. It serves as an online platform for Jephte Houses Ltd., a fictional real estate company, to showcase their properties and services to potential clients. The website features a modern and user-friendly interface designed to attract and engage visitors. Users can explore available properties, view detailed descriptions and images, and contact the company for inquiries. The project demonstrates my skills in frontend development, including ReactJS for dynamic UI components and SASS for efficient styling and theming.",
     techStack: ["ReactJS, SASS"],
     github: "https://github.com/Iyabivuz-e/Real-Estate",
     deploy: "https://jephte-house-ltd.netlify.app/",
@@ -40,8 +40,8 @@ const projects: Project[] = [
     title: "Responsive Portfolio",
     image: ecommerce,
     description:
-      "A detailed description of your first project, highlighting its functionalities and achievements.",
-    techStack: ["HTML, Css, JavaScript"],
+      "My portfolio website is a sleek and modern showcase of my work, skills, and expertise. Built using Tailwind CSS, React.js, and TypeScript, it offers a seamless user experience with responsive design for various screen sizes. The website features a clean and intuitive interface, making it easy for visitors to navigate through my projects, learn about my background, and get in touch. With a dark to light mode toggle and attention to detail, it reflects my commitment to professionalism and innovation in web development.",
+    techStack: ["React", "TypeScript", "TailwindCss"],
     github: "https://github.com/Iyabivuz-e/Portfolio",
     deploy: "https://dio-portfolio.vercel.app/",
   },
@@ -50,8 +50,8 @@ const projects: Project[] = [
     title: "Recipe App Landing Page",
     image: recipeApp,
     description:
-      "Another project description showcasing its key features and impact.",
-    techStack: ["VueJS", "Python", "PostgreSQL"],
+      "The <Recipe App Landing Page> is a project I developed while learning Tailwind CSS which boosted my skills and experience. It serves as a simple yet visually appealing landing page designed to showcase the UI skills and color schemes I've acquired. Built using ReactJS and Tailwind CSS, the landing page features a captivating color scheme and user interface that grabs visitors' attention and its responsiveness to all screens. Despite its simplicity, the landing page demonstrates my proficiency in front-end development, particularly in creating visually engaging designs using modern web technologies like ReactJS and Tailwind CSS.",
+    techStack: ["ReactJs, Tailwind Css"],
     github: "https://github.com/Iyabivuz-e/Tailwind-Recipe-Simple-App",
     deploy: "https://dioeats.netlify.app/",
   },

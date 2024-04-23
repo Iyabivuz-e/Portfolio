@@ -1,5 +1,7 @@
 // import React from 'react'
 
+import { Link } from "react-router-dom";
+
 const Intro = () => {
   return (
     <header className="flex flex-col mt-16 ">
@@ -13,9 +15,13 @@ const Intro = () => {
         <p className="mt-3 text-lg font-semibold dark:text-slate-200">
           I am a Full stack developer
         </p>
-        <button className="mt-3 px-4 py-2 bg-green-600 text-white">
+        <Link
+          target="blank"
+          to="https://drive.google.com/file/d/1yrVRqG_9om02Bwooii03Ci8JTHEZ3osc/view"
+          className="mt-3 px-4 py-2 bg-green-600 text-white"
+        >
           Resume
-        </button>
+        </Link>
       </section>
     </header>
   );
