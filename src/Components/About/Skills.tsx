@@ -1,6 +1,10 @@
 import programmingLanguages from "../../helpers/Techskills";
 
 const Skills = () => {
+
+  const handleFilter = () => {
+    console.log("Handled...")
+  }
   return (
     <div>
       <h1 className="text-xl mb-5 font-bold dark:text-slate-200">My Skills</h1>
@@ -9,7 +13,7 @@ const Skills = () => {
           className=" py-3 flex gap-3 mb-5 max-sm:flex-wrap justify-start"
         >
           <li className="bg-green-600 text-white px-4 py-2 cursor-pointer font-semibold">All</li>
-          <li className="bg-green-600 text-white px-4 py-2 cursor-pointer font-semibold">Frontend</li>
+          <li onClick={handleFilter} className="bg-green-600 text-white px-4 py-2 cursor-pointer font-semibold">Frontend</li>
           <li className="bg-green-600 text-white px-4 py-2 cursor-pointer font-semibold">Backend</li>
           <li className="bg-green-600 text-white px-4 py-2 cursor-pointer font-semibold">Database</li>
         </ul>

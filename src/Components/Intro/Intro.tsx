@@ -1,11 +1,17 @@
-// import React from 'react'
-
+import myImage from "../../assets/images/imggggh.jpg";
 import { Link } from "react-router-dom";
 
 const Intro = () => {
   return (
-    <header className="flex flex-col mt-16 ">
-      <section className="m-auto">
+    <header className="flex max-sm:flex-col max-sm:items-center mt-16 max-md:gap-20 gap-5 ">
+      <div className="w-[40%] max-md:w-3/4 h-2/4 rounded-full bg-red-500">
+        <img
+          src={myImage}
+          alt="background-img"
+          className="w-full h-full rounded-full object-fill"
+        />
+      </div>
+      <section className="m-auto max-sm:text-center max-sm:-mt-8">
         <p className="text-lg font-semibold mb-3 dark:text-slate-200">
           Hello! My name is
         </p>
