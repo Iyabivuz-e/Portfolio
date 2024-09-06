@@ -45,6 +45,12 @@ const programmingLanguages: Languages[] = [
     category: "Frontend",
     id: uuidv4(),
   },
+  {
+    name: "NextJs",
+    image: "https://placeimg.com/64/64/tech",
+    category: "Frontend",
+    id: uuidv4(),
+  },
 
   // Backend
   {
@@ -74,7 +80,7 @@ const programmingLanguages: Languages[] = [
   {
     name: "Python",
     image: "https://placeimg.com/64/64/tech",
-    category: "Backend & Data Science",
+    category: "Backend",
     id: uuidv4(),
   },
 
@@ -102,13 +108,13 @@ const programmingLanguages: Languages[] = [
   {
     name: "Git",
     image: "https://placeimg.com/64/64/tech",
-    category: "Version Control",
+    category: "Version-Control",
     id: uuidv4(),
   },
   {
     name: "GitHub",
     image: "https://placeimg.com/64/64/tech",
-    category: "Version Control",
+    category: "Version-Control",
     id: uuidv4(),
   },
 
@@ -116,7 +122,7 @@ const programmingLanguages: Languages[] = [
   {
     name: "Postman",
     image: "https://placeimg.com/64/64/tech",
-    category: "API Testing",
+    category: "Backend",
     id: uuidv4(),
   },
 ];
