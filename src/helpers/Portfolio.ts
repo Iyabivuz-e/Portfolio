@@ -3,6 +3,7 @@ import kiiteats from "../assets/images/KiitEats.png";
 import realestate from "../assets/images/realEstate.png";
 import portfolio from "../assets/images/portfolio.png";
 import recipeApp from "../assets/images/Recipe App.png";
+import jephImg from "../assets/images/jeph.png";
 
 type Project = {
   id: string;
@@ -15,6 +16,16 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    id: uuidv4(), // Generate unique ID using uuid
+    title: "A real estate web application",
+    image: jephImg,
+    description:
+      "The Food Ordering App is a streamlined web application for easy online food ordering. Integrated with Stripe for secure payments, users can browse, add items to cart, and checkout confidently. Admins manage orders and track sales efficiently via the intuitive panel. Built with React.js and Node.js for a seamless experience.",
+    techStack: ["NextJs", "TailwindCss", "TypeScript", "MongoDB"],
+    github: "/",
+    deploy: "/",
+  },
   {
     id: uuidv4(), // Generate unique ID using uuid
     title: "Food Devlivery Web App",
