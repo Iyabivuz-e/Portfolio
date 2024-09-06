@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Intro = () => {
   return (
     <header className="flex max-sm:flex-col max-sm:items-center mt-16 max-md:gap-20 gap-5 ">
-      <div className="w-[40%] max-md:w-3/4 h-2/4 rounded-full bg-red-500">
+      <div className="w-[40%] max-md:w-3/4 h-2/4 rounded-full">
         <img
           src={myImage}
           alt="background-img"
