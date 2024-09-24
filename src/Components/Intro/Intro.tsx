@@ -23,7 +23,7 @@ const Intro = () => {
         </p>
         <Link
           target="blank"
-          to="https://drive.google.com/file/d/1yrVRqG_9om02Bwooii03Ci8JTHEZ3osc/view"
+          to="https://drive.google.com/file/d/1PZTIS0MoIYyK5r9Fhz9NpFmDfbHB8031/view?usp=sharing"
           className="mt-3 px-4 py-2 bg-green-600 text-white"
         >
           Resume
