@@ -3,7 +3,7 @@ import kiiteats from "../assets/images/KiitEats.png";
 import realestate from "../assets/images/realEstate.png";
 import portfolio from "../assets/images/portfolio.png";
 import recipeApp from "../assets/images/Recipe App.png";
-import jephImg from "../assets/images/jeph.png";
+import jephImg from "../assets/images/another.png";
 
 type Project = {
   id: string;
@@ -21,10 +21,10 @@ const projects: Project[] = [
     title: "A real estate web application",
     image: jephImg,
     description:
-      "The Food Ordering App is a streamlined web application for easy online food ordering. Integrated with Stripe for secure payments, users can browse, add items to cart, and checkout confidently. Admins manage orders and track sales efficiently via the intuitive panel. Built with React.js and Node.js for a seamless experience.",
+      "save7n is a modern real estate platform designed to streamline the process of property discovery, buying, and selling. The website features comprehensive property listings, user-friendly search filters, and detailed property descriptions to help users find their ideal homes or investment properties.",
     techStack: ["NextJs", "TailwindCss", "TypeScript", "MongoDB"],
     github: "/",
-    deploy: "/",
+    deploy: "/https://save7n.vercel.app/",
   },
   {
     id: uuidv4(), // Generate unique ID using uuid
