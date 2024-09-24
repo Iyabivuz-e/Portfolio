@@ -24,7 +24,7 @@ const projects: Project[] = [
       "save7n is a modern real estate platform designed to streamline the process of property discovery, buying, and selling. The website features comprehensive property listings, user-friendly search filters, and detailed property descriptions to help users find their ideal homes or investment properties.",
     techStack: ["NextJs", "TailwindCss", "TypeScript", "MongoDB"],
     github: "/",
-    deploy: "/https://save7n.vercel.app/",
+    deploy: "https://save7n.vercel.app/",
   },
   {
     id: uuidv4(), // Generate unique ID using uuid
