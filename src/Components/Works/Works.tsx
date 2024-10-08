@@ -17,6 +17,7 @@ const Works = () => {
               <img
                 src={proj.image}
                 alt={proj.id}
+                loading="lazy"
                 className="w-full object-cover h-full"
               />
             </div>

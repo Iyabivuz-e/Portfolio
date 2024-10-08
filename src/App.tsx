@@ -6,7 +6,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Works from "./Components/Works/Works";
 import { BrowserRouter } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
-import {useState} from "react"
+import { useState } from "react";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -15,7 +15,7 @@ const App = () => {
     <div className={`${darkMode && "dark"}`}>
       <div className="px-6 sm:px-12 py-3 dark:bg-neutral-950 max-sm:px-4">
         <BrowserRouter>
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
           <Intro />
           <About />
           <Works />
