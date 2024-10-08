@@ -34,6 +34,12 @@ const programmingLanguages: Languages[] = [
     id: uuidv4(),
   },
   {
+    name: "Daisy UI",
+    image: "https://placeimg.com/64/64/tech",
+    category: "Frontend",
+    id: uuidv4(),
+  },
+  {
     name: "SASS",
     image: "https://placeimg.com/64/64/tech",
     category: "Frontend",

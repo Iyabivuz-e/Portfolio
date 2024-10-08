@@ -4,6 +4,7 @@ import realestate from "../assets/images/realEstate.png";
 import portfolio from "../assets/images/portfolio.png";
 import recipeApp from "../assets/images/Recipe App.png";
 import jephImg from "../assets/images/another.png";
+import movies from "../assets/images/image.png";
 
 type Project = {
   id: string;
@@ -18,7 +19,17 @@ type Project = {
 const projects: Project[] = [
   {
     id: uuidv4(), // Generate unique ID using uuid
-    title: "A real estate web application",
+    title: "Movie My Mood",
+    image: movies,
+    description:
+      "This app, MovieMyMood, is designed to help users discover movies based on their current mood. With an intuitive interface, users can select from various genres that reflect their emotional state, such as Action, Comedy, Drama, Romance, and more. The app enhances the movie-watching experience by tailoring recommendations to how users feel in the moment, making it easy and fun to find the perfect film for any mood.",
+    techStack: ["NextJs", "TailwindCss", "TypeScript", "DaisyUI"],
+    github: "https://github.com/Iyabivuz-e/movie-my-mood/",
+    deploy: "/",
+  },
+  {
+    id: uuidv4(), // Generate unique ID using uuid
+    title: "Sav7N Real-Estate",
     image: jephImg,
     description:
       "save7n is a modern real estate platform designed to streamline the process of property discovery, buying, and selling. The website features comprehensive property listings, user-friendly search filters, and detailed property descriptions to help users find their ideal homes or investment properties.",
@@ -38,7 +49,7 @@ const projects: Project[] = [
   },
   {
     id: uuidv4(),
-    title: "Real Estate - Jephte Houses Ltd.",
+    title: "Jephte Houses Ltd.",
     image: realestate,
     description:
       "Real Estate - Jephte Houses Ltd. is a ReactJS web app styled with SASS, presenting a modern interface for the fictional company. Users can browse properties, view details, and contact the company. The project showcases my frontend skills using ReactJS for dynamic UI and SASS for efficient styling.",

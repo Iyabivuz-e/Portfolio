@@ -21,11 +21,31 @@ const Works = () => {
               />
             </div>
             <ul className="flex flex-col gap-3 mt-3 px-4 py-2">
-              <li className="font-bold">{proj.title}</li>
+              {/* Title *********** */}
+              <div className="w-full  pb-3 flex justify-between items-center gap-1 max-md:gap-3 max-md:flex-col max-md:items-start">
+                <li className="font-bold">{proj.title}</li>
+                <div className=" flex gap-3 justify-end ">
+                  <Link
+                    to={proj.deploy}
+                    target="blank"
+                    className="px-6 py-1 border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all"
+                  >
+                    View
+                  </Link>
+                  <Link
+                    to={proj.github}
+                    target="blank"
+                    className="px-6 py-1 border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all"
+                  >
+                    Github
+                  </Link>
+                </div>
+              </div>
+              {/* Title *********** */}
               <li>{proj.description}</li>
               <li className="mr-3">Tech Stack: {proj.techStack.join(", ")}</li>
             </ul>
-            <div className="p-4 flex justify-between gap-3">
+            {/* <div className="p-4 flex justify-between gap-3">
               <Link
                 to={proj.deploy}
                 target="blank"
@@ -40,7 +60,7 @@ const Works = () => {
               >
                 Github
               </Link>
-            </div>
+            </div> */}
           </section>
         ))}
       </div>
