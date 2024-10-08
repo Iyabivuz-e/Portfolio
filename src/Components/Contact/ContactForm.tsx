@@ -1,18 +1,15 @@
 import React, {useState} from "react";
-
-// type FormType = {
-//   fullname: String;
-//   email: String;
-//   phoneNo: number;
-//   message: String;
-//   name: React.ChangeEvent<HTMLInputElement>;
-//   value: React.ChangeEvent<HTMLInputElement>;
-// };
-
+import Submitted from "../../helpers/Submitted";
 
 const ContactForm = () => {
 
-  const [error, setError] = useState("");
+  const [errors, setErrors] = useState({
+    fullname: "",
+    email: "",
+    phoneNo: "",
+    message: "",
+  });
+
   const [inputValue, setInputValue] = useState({
     fullname: "",
     email: "",
@@ -20,34 +17,46 @@ const ContactForm = () => {
     message: "",
   });
 
-  const handleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const {name, value} = e.target;
+  const [ submitted, setSubmitted] = useState(false)
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
     setInputValue({ ...inputValue, [name]: value });
-  }
+    // Clear the error message as the user types
+    setErrors({ ...errors, [name]: "" });
+  };
 
-  const handleSubmit = (e:React.FormEvent<HTMLElement>) => {
-    e.preventDefault()
+  const handleSubmit = (e: React.FormEvent<HTMLElement>) => {
+    e.preventDefault();
+
     // Validations
-    if(inputValue.fullname === ""){
-      setError("Full name is required")
-      console.log(error)
-      return
-    }
-    if(inputValue.email === ""){
-      setError("Email is required")
-      return
-    }
-    if(inputValue.phoneNo.length === 0){
-      setError("Phone number is required")
-      return
-    }
-    if(inputValue.message === ""){
-      setError("Message is required")
-      return
-    }
+    const newErrors = {
+      fullname: inputValue.fullname === "" ? "Full name is required" : "",
+      email: inputValue.email === "" ? "Email is required" : "",
+      phoneNo: inputValue.phoneNo === "" ? "Phone number is required" : "",
+      message: inputValue.message === "" ? "Message is required" : "",
+    };
 
-    console.log(inputValue)
-  }
+    setErrors(newErrors);
+
+    // If there are no errors, submit the form (all errors should be empty)
+    if (!Object.values(newErrors).some((error) => error !== "")) {
+      setInputValue({
+        fullname: "",
+        email: "",
+        phoneNo: "",
+        message: "",
+      });
+      setSubmitted(true);
+      console.log("Form Submitted: ", inputValue);
+
+      setTimeout(() => {
+        setSubmitted(false)
+      }, 4000)
+    }
+  };
 
   return (
     <div className="w-full md:w-[70%] sm:w-[85%] m-auto mt-6">
@@ -61,7 +70,9 @@ const ContactForm = () => {
           value={inputValue.fullname}
           onChange={handleChange}
         />
-        {error ? (<small className="-mt-4 text-red-500">{error}</small>): ""}
+        {errors.fullname && (
+          <small className="-mt-4 text-red-500">{errors.fullname}</small>
+        )}
         <input
           className="outline-none bg-slate-200 p-3"
           type="text"
@@ -71,7 +82,9 @@ const ContactForm = () => {
           value={inputValue.email}
           onChange={handleChange}
         />
-        {error ? (<small className="-mt-4 text-red-500">{error}</small>): ""}
+        {errors.email && (
+          <small className="-mt-4 text-red-500">{errors.email}</small>
+        )}
 
         <input
           className="outline-none bg-slate-200 p-3"
@@ -82,7 +95,9 @@ const ContactForm = () => {
           value={inputValue.phoneNo}
           onChange={handleChange}
         />
-        {error ? (<small className="-mt-4 text-red-500">{error}</small>): ""}
+        {errors.phoneNo && (
+          <small className="-mt-4 text-red-500">{errors.phoneNo}</small>
+        )}
 
         <textarea
           className="outline-none bg-slate-200 p-3"
@@ -92,11 +107,16 @@ const ContactForm = () => {
           value={inputValue.message}
           onChange={handleChange}
         ></textarea>
-        {error ? (<small className="-mt-4 text-red-500">{error}</small>): ""}
+        {errors.message && (
+          <small className="-mt-4 text-red-500">{errors.message}</small>
+        )}
 
         <button className="bg-green-600 px-4 py-2 font-semibold text-white">
           Send Me A Message
         </button>
+        {submitted && (
+          <Submitted/>
+        ) }
       </form>
     </div>
   );
