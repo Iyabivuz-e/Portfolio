@@ -20,7 +20,7 @@ const Skills = () => {
     <div className="">
       <h1 className="text-xl mb-5 font-bold text-base-neutral">My Skills</h1>
       <div>
-        <ul className="py-3 flex max-sm:grid grid-cols-2 gap-3 mb-5 justify-start">
+        <ul className="py-3 flex max-sm:grid grid-cols-3 gap-3 mb-5 justify-start">
           <li
             onClick={() => handleFilter("All")}
             className="bg-green-500 btn max-sm:w-full text-neutral px-4 py-2 cursor-pointer font-semibold"
