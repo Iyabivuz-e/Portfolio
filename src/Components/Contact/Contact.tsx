@@ -13,7 +13,7 @@ const Contact = () => {
       <section className="flex flex-wrap align-center justify-center mt-5 gap-5">
         <Link
           to="https://www.linkedin.com/in/iyabivuze/"
-          className="flex align-center bg-green-600 text-white px-4 py-2 gap-1"
+          className="flex align-center bg-green-600 opacity-70 text-white px-4 py-2 gap-1"
         >
           <LinkedInIcon />
           LinkedIn
@@ -27,7 +27,7 @@ const Contact = () => {
         </Link>
         <Link
           to="https://github.com/Iyabivuz-e"
-          className="flex align-center bg-green-600 text-white px-4 py-2 gap-1"
+          className="flex align-center bg-green-600 opacity-70 text-white px-4 py-2 gap-1"
         >
           <GitHubIcon />
           GitHub

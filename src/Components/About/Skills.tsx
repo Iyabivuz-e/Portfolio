@@ -18,36 +18,36 @@ const Skills = () => {
 
   return (
     <div>
-      <h1 className="text-xl mb-5 font-bold dark:text-slate-200">My Skills</h1>
+      <h1 className="text-xl mb-5 font-bold text-base-neutral">My Skills</h1>
       <div>
         <ul className="py-3 flex gap-3 mb-5 max-sm:flex-wrap justify-start">
           <li
             onClick={() => handleFilter("All")}
-            className="bg-green-600 text-white px-4 py-2 cursor-pointer font-semibold"
+            className="bg-green-500 btn text-neutral px-4 py-2 cursor-pointer font-semibold"
           >
             All
           </li>
           <li
             onClick={() => handleFilter("Frontend")}
-            className="bg-green-600 text-white px-4 py-2 cursor-pointer font-semibold"
+            className="bg-green-500 btn text-neutral px-4 py-2 cursor-pointer font-semibold"
           >
             Frontend
           </li>
           <li
             onClick={() => handleFilter("Backend")}
-            className="bg-green-600 text-white px-4 py-2 cursor-pointer font-semibold"
+            className="bg-green-500 btn text-neutral px-4 py-2 cursor-pointer font-semibold"
           >
             Backend
           </li>
           <li
             onClick={() => handleFilter("Database")}
-            className="bg-green-600 text-white px-4 py-2 cursor-pointer font-semibold"
+            className="bg-green-500 btn text-neutral px-4 py-2 cursor-pointer font-semibold"
           >
             Database
           </li>
           <li
             onClick={() => handleFilter("Version-Control")}
-            className="bg-green-600 text-white px-4 py-2 cursor-pointer font-semibold"
+            className="bg-green-500 btn text-neutral px-4 py-2 cursor-pointer font-semibold"
           >
             Version-Control
           </li>
@@ -57,9 +57,9 @@ const Skills = () => {
         {filteredSkills.map((skill) => (
           <div
             key={skill.id}
-            className="bg-slate-200 px-4 py-3 flex flex-col items-center justify-center shadow-md hover:shadow-lg"
+            className="text-base-neutral px-2 py-1 flex flex-col items-center justify-center"
           >
-            <li className="list-none font-medium">{skill.name}</li>
+            <button  className=" btn ">{skill.name}</button>
           </div>
         ))}
       </div>

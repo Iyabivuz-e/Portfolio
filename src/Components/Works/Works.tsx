@@ -11,7 +11,7 @@ const Works = () => {
         {projects.map((proj) => (
           <section
             key={proj.id}
-            className="bg-slate-200 dark:text-slate-200 dark:bg-neutral-900"
+            className="bg-base-200 text-base-content"
           >
             <div>
               <img

@@ -24,7 +24,6 @@ const ContactForm = () => {
   ) => {
     const { name, value } = e.target;
     setInputValue({ ...inputValue, [name]: value });
-    // Clear the error message as the user types
     setErrors({ ...errors, [name]: "" });
   };
 
@@ -62,7 +61,7 @@ const ContactForm = () => {
     <div className="w-full md:w-[70%] sm:w-[85%] m-auto mt-6">
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
-          className="outline-none bg-slate-200 p-3"
+          className="outline-none bg-base-200 p-3"
           type="text"
           name="fullname"
           id=""
@@ -74,7 +73,7 @@ const ContactForm = () => {
           <small className="-mt-4 text-red-500">{errors.fullname}</small>
         )}
         <input
-          className="outline-none bg-slate-200 p-3"
+          className="outline-none bg-base-200 p-3"
           type="text"
           name="email"
           id=""
@@ -87,7 +86,7 @@ const ContactForm = () => {
         )}
 
         <input
-          className="outline-none bg-slate-200 p-3"
+          className="outline-none bg-base-200 p-3"
           type="number"
           name="phoneNo"
           id=""
@@ -100,7 +99,7 @@ const ContactForm = () => {
         )}
 
         <textarea
-          className="outline-none bg-slate-200 p-3"
+          className="outline-none bg-base-200 p-3"
           name="message"
           id=""
           placeholder="message"
@@ -111,7 +110,7 @@ const ContactForm = () => {
           <small className="-mt-4 text-red-500">{errors.message}</small>
         )}
 
-        <button className="bg-green-600 px-4 py-2 font-semibold text-white">
+        <button className="bg-green-600 opacity-70 px-4 py-2 font-semibold text-white">
           Send Me A Message
         </button>
         {submitted && (

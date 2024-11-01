@@ -6,20 +6,23 @@ import Navbar from "./Components/Navbar/Navbar";
 import Works from "./Components/Works/Works";
 import { BrowserRouter } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
-import { useState } from "react";
+import ThemeCollector from "./helpers/Theme";
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={`${darkMode && "dark"}`}>
-      <div className="px-6 sm:px-12 py-3 dark:bg-neutral-950 max-sm:px-4">
+    <div>
+      <div className="w-full">
+        <ThemeCollector/>
         <BrowserRouter>
-          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Navbar  />
+          <div className="px-10">
           <Intro />
           <About />
           <Works />
           <Contact />
+
+          </div>
         </BrowserRouter>
         <Footer />
       </div>
