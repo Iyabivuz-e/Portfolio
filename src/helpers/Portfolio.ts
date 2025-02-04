@@ -3,8 +3,6 @@ import kiiteats from "../assets/images/KeetEats.png";
 import realestate from "../assets/images/RealEstate.png";
 import portfolio from "../assets/images/port.png";
 import recipeApp from "../assets/images/DioEats.png";
-// import jephImg from "../assets/images/another.png";
-// import movies from "../assets/images/image.png";
 import classTap from "../assets/images/ClassTap.png";
 
 type Project = {
