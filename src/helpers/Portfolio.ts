@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import kiiteats from "../assets/images/KeetEats.png";
-import realestate from "../assets/images/RealEstate.png";
+import realestate from "../assets/images/realEstate.png";
 import portfolio from "../assets/images/port.png";
 import recipeApp from "../assets/images/DioEats.png";
 import classTap from "../assets/images/ClassTap.png";
