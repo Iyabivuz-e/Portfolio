@@ -1,10 +1,11 @@
 import { v4 as uuidv4 } from "uuid";
-import kiiteats from "../assets/images/KiitEats.png";
-import realestate from "../assets/images/realEstate.png";
-import portfolio from "../assets/images/portfolio.png";
-import recipeApp from "../assets/images/Recipe App.png";
-import jephImg from "../assets/images/another.png";
-import movies from "../assets/images/image.png";
+import kiiteats from "../assets/images/KeetEats.png";
+import realestate from "../assets/images/RealEstate.png";
+import portfolio from "../assets/images/port.png";
+import recipeApp from "../assets/images/DioEats.png";
+// import jephImg from "../assets/images/another.png";
+// import movies from "../assets/images/image.png";
+import classTap from "../assets/images/ClassTap.png";
 
 type Project = {
   id: string;
@@ -19,24 +20,34 @@ type Project = {
 const projects: Project[] = [
   {
     id: uuidv4(), // Generate unique ID using uuid
-    title: "Movie My Mood",
-    image: movies,
+    title: "ClassTap",
+    image: classTap,
     description:
-      "This app, MovieMyMood, is designed to help users discover movies based on their current mood. With an intuitive interface, users can select from various genres that reflect their emotional state, such as Action, Comedy, Drama, Romance, and more. The app enhances the movie-watching experience by tailoring recommendations to how users feel in the moment, making it easy and fun to find the perfect film for any mood.",
-    techStack: ["NextJs", "TailwindCss", "TypeScript", "DaisyUI"],
-    github: "https://github.com/Iyabivuz-e/movie-my-mood/",
+      "worked on a student attendance management system utilizing RFID cards for efficient attendance tracking. Built with Next.js, MongoDB, Tailwind CSS, and DaisyUI, the platform enables students to record their attendance seamlessly, while providing the Director of Studies with a comprehensive dashboard to manage and monitor attendance records effectively.",
+    techStack: ["NextJs", "TailwindCss", "TypeScript", "DaisyUI, MongoDB"],
+    github: "/",
     deploy: "/",
   },
-  {
-    id: uuidv4(), // Generate unique ID using uuid
-    title: "Sav7N Real-Estate",
-    image: jephImg,
-    description:
-      "save7n is a modern real estate platform designed to streamline the process of property discovery, buying, and selling. The website features comprehensive property listings, user-friendly search filters, and detailed property descriptions to help users find their ideal homes or investment properties.",
-    techStack: ["NextJs", "TailwindCss", "TypeScript", "MongoDB"],
-    github: "/",
-    deploy: "https://save7n.vercel.app/",
-  },
+  // {
+  //   id: uuidv4(), // Generate unique ID using uuid
+  //   title: "Movie My Mood",
+  //   image: movies,
+  //   description:
+  //     "This app, MovieMyMood, is designed to help users discover movies based on their current mood. With an intuitive interface, users can select from various genres that reflect their emotional state, such as Action, Comedy, Drama, Romance, and more. The app enhances the movie-watching experience by tailoring recommendations to how users feel in the moment, making it easy and fun to find the perfect film for any mood.",
+  //   techStack: ["NextJs", "TailwindCss", "TypeScript", "DaisyUI"],
+  //   github: "https://github.com/Iyabivuz-e/movie-my-mood/",
+  //   deploy: "/",
+  // },
+  // {
+  //   id: uuidv4(), // Generate unique ID using uuid
+  //   title: "Sav7N Real-Estate",
+  //   image: jephImg,
+  //   description:
+  //     "save7n is a modern real estate platform designed to streamline the process of property discovery, buying, and selling. The website features comprehensive property listings, user-friendly search filters, and detailed property descriptions to help users find their ideal homes or investment properties.",
+  //   techStack: ["NextJs", "TailwindCss", "TypeScript", "MongoDB"],
+  //   github: "/",
+  //   deploy: "https://save7n.vercel.app/",
+  // },
   {
     id: uuidv4(), // Generate unique ID using uuid
     title: "Food Devlivery Web App",

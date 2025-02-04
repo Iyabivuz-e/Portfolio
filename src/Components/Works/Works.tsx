@@ -9,10 +9,7 @@ const Works = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12  ">
         {projects.map((proj) => (
-          <section
-            key={proj.id}
-            className="bg-base-200 text-base-content"
-          >
+          <section key={proj.id} className="bg-base-200 text-base-content">
             <div>
               <img
                 src={proj.image}
@@ -44,7 +41,10 @@ const Works = () => {
               </div>
               {/* Title *********** */}
               <li>{proj.description}</li>
-              <li className="mr-3">Tech Stack: {proj.techStack.join(", ")}</li>
+              <li className="mr-3">
+                <span className="font-bold">Tech Stack: </span>
+                {proj.techStack.join(", ")}
+              </li>
             </ul>
             {/* <div className="p-4 flex justify-between gap-3">
               <Link
